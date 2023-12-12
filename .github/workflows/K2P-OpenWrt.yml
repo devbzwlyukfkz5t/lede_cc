@@ -1,4 +1,4 @@
-name: k2p OpenWrt
+name: K2P OpenWrt
 
 on:
   workflow_dispatch:
