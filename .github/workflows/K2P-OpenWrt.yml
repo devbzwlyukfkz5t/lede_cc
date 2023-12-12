@@ -10,11 +10,11 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: configs/k2p.config
   DIY_SCRIPT: diy-mini.sh
-  CLASH_KERNEL: ramips
+  CLASH_KERNEL: mipsel_24kc
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: mipsel_24kc
+  FIRMWARE_TAG: k2p
   TZ: Asia/Shanghai
 
 jobs:
