@@ -1,4 +1,4 @@
-name: X86_64 Mini OpenWrt
+name: k2p OpenWrt
 
 on:
   workflow_dispatch:
@@ -8,13 +8,13 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: configs/x86_64-mini.config
+  CONFIG_FILE: configs/k2p.config
   DIY_SCRIPT: diy-mini.sh
-  CLASH_KERNEL: amd64
+  CLASH_KERNEL: ramips
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: X86_64
+  FIRMWARE_TAG: mipsel_24kc
   TZ: Asia/Shanghai
 
 jobs:
