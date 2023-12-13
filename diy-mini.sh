@@ -19,11 +19,6 @@ rm -rf feeds/luci/applications/luci-app-netdata
 
 # 科学上网插件
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
-svn export https://github.com/haiibo/packages/trunk/luci-app-vssr package/luci-app-vssr
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
-svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 
 # 修改本地时间格式
 sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/*/index.htm
