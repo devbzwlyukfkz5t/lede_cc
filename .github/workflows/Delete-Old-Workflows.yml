@@ -18,7 +18,7 @@ jobs:
         keep_minimum_runs: 0
 
     - name: Delete Old Releases
-      uses: dev-drprasad/delete-older-releases@master
+      uses: dev-drprasad/delete-older-releases@openwrt
       with:
         keep_latest: 1
         delete_tags: true
