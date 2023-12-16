@@ -6,8 +6,7 @@ on:
     - cron: 0 19 * * *
 
 env:
-  #REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: configs/k2p.config
   DIY_SCRIPT: diy-mini.sh
