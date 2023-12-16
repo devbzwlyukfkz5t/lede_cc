@@ -6,7 +6,7 @@ on:
     - cron: 0 19 * * *
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   CONFIG_FILE: configs/k2p.config
   DIY_SCRIPT: diy-mini.sh
@@ -45,7 +45,7 @@ jobs:
       run: |
         docker rmi $(docker images -q)
         sudo rm -rf /usr/share/dotnet /etc/apt/sources.list.d /usr/local/lib/android $AGENT_TOOLSDIRECTORY
-        sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
+        sudo -E apt-get -y purge binutils bzip2 diff find flex gawk gcc-6+ getopt grep install libc-dev libz-dev make4.1+ perl python3.7+ rsync subversion unzip which || true
         sudo -E apt-get -y update
         sudo -E apt-get -y install rename $(curl -fsSL is.gd/depends_ubuntu_2204)
         sudo -E systemctl daemon-reload
