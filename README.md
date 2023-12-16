@@ -1,1 +1,1 @@
-LEDE Cloud Compiler
+OpenWrt Cloud Compiler
