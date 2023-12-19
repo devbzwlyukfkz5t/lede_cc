@@ -7,7 +7,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-22.03
+  REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: configs/k2p.config
   DIY_SCRIPT: diy-mini.sh
   CLASH_KERNEL: mipsel_24kc
