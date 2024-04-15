@@ -106,6 +106,8 @@ jobs:
         #$GITHUB_WORKSPACE/scripts/preset-clash-core.sh $CLASH_KERNEL
         #$GITHUB_WORKSPACE/scripts/preset-terminal-tools.sh
         #$GITHUB_WORKSPACE/scripts/preset-adguard-core.sh $CLASH_KERNEL
+        cat $GITHUB_WORKSPACE/target/linux/ramips/dts/mt7621_phicomm_k2p.dts
+        cat $GITHUB_WORKSPACE/target/linux/ramips/image/mt7621.mk
 
     - name: Download DL Package
       run: |
