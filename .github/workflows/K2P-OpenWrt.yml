@@ -1,6 +1,7 @@
 name: K2P OpenWrt
 
 on:
+  push:
   workflow_dispatch:
   schedule:
     - cron: 0 19 * * *
