@@ -27,11 +27,11 @@ sed -i 's/15744k/32448k/g' target/linux/ramips/image/mt7621.mk
 sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/*/index.htm
 
 # 科学上网插件
-git clone --depth=1 -b main https://github.com/fw876/helloworld package/helloworld
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
+#git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
 # 科学上网附加工具
 rm -rf feeds/packages/lang/golang
