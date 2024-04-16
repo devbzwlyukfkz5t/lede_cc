@@ -28,7 +28,7 @@ sed -i 's/192.168.1.1/192.168.102.1/g' package/base-files/files/bin/config_gener
 sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/*/index.htm
 
 # 修复 hostapd 报错
-cp -f $GITHUB_WORKSPACE/scripts/950-0010-spi-nor-winbond-w25q256-4b-opcoden.patch target/linux/ramips/patches-5.15/950-0010-spi-nor-winbond-w25q256-4b-opcoden.patch
+# cp -f $GITHUB_WORKSPACE/scripts/950-0010-spi-nor-winbond-w25q256-4b-opcoden.patch target/linux/ramips/patches-5.15/950-0010-spi-nor-winbond-w25q256-4b-opcoden.patch
 
 # 科学上网插件
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
