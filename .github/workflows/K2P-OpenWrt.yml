@@ -1,4 +1,4 @@
-name: K2P OpenWrt
+name: k2p OpenWrt
 
 on:
   push:
