@@ -2,7 +2,7 @@ Index: linux-5.15.153/arch/mips/ralink/mt7620.c
 ===================================================================
 --- linux-5.15.153.orig/arch/mips/ralink/mt7620.c
 +++ linux-5.15.153/arch/mips/ralink/mt7620.c
-@@ -206,7 +206,7 @@ void __init ralink_clk_init(void)
+@@ -206,10 +206,10 @@ void __init ralink_clk_init(void)
  
  	if (is_mt76x8()) {
  		if (xtal_rate == MHZ(40))
@@ -10,5 +10,8 @@ Index: linux-5.15.153/arch/mips/ralink/mt7620.c
 +			cpu_rate = MHZ(680);
  		else
  			cpu_rate = MHZ(575);
-- 		dram_rate = sys_rate = cpu_rate / 3;
-+ 		dram_rate = sys_rate = 580 / 3;
+-		dram_rate = sys_rate = cpu_rate / 3;
++		dram_rate = sys_rate = 580 / 3;
+ 		periph_rate = MHZ(40);
+ 		pcmi2s_rate = MHZ(480);
+ 
