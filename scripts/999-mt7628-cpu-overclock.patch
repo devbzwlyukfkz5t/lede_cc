@@ -11,7 +11,7 @@ Index: linux-5.15.153/arch/mips/ralink/mt7620.c
  		else
  			cpu_rate = MHZ(575);
 -		dram_rate = sys_rate = cpu_rate / 3;
-+		dram_rate = sys_rate = 690 / 3;
++		dram_rate = cpu_rate / 3; sys_rate = 690 / 3;
  		periph_rate = MHZ(40);
  		pcmi2s_rate = MHZ(480);
  
