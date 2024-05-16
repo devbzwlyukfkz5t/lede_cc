@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-18.06
+  REPO_BRANCH: openwrt-19.07
   CONFIG_FILE: configs/fwr171.config
   DIY_SCRIPT: fwr171.sh
   CLASH_KERNEL: ar71xx
@@ -71,6 +71,7 @@ jobs:
 
     - name: Generate Variables
       run: |
+        echo $OPENWRT_PATH
         cp $CONFIG_FILE $OPENWRT_PATH/.config
         cd $OPENWRT_PATH
         make defconfig > /dev/null 2>&1
