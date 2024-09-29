@@ -128,6 +128,9 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
         echo "DATE=$(date +"%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "FILE_DATE=$(date +"%Y.%m.%d")" >> $GITHUB_ENV
+        cat $GITHUB_WORKSPACE/target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+        cat $GITHUB_WORKSPACE/target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
+        cat $GITHUB_WORKSPACE/target/linux/ramips/image/mt76x8.mk
 
     - name: Check Space Usage
       if: (!cancelled())
