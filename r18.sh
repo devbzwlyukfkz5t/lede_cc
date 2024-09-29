@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # 32M 固件, https://www.bgegao.com/2020/11/1885.html
-sed -i 's/<0x50000 0xf70000>/<0x50000 0xfb0000>/g'     target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
 sed -i 's/"HiWiFi HC5861B";/"HiWiFi HC5861B (32M)";/g' target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
 sed -i 's/15808k/32448k/g'                             target/linux/ramips/image/mt76x8.mk
 
