@@ -145,9 +145,6 @@ jobs:
       run: |
         cd $OPENWRT_PATH/bin/targets/*/*
         cat config.buildinfo
-        cat $OPENWRT_PATH/target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
-        cat $OPENWRT_PATH/target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
-        cat $OPENWRT_PATH/target/linux/ramips/image/mt76x8.mk
 
         rm -rf packages *.buildinfo *.manifest *kernel.bin *rootfs.img.gz profiles.json sha256sums
         rename 's/^/mini-/' *
