@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-19.07
+  REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: configs/r18.config
   DIY_SCRIPT: r18.sh
   CLASH_KERNEL: mipsel_24kc
