@@ -128,9 +128,6 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
         echo "DATE=$(date +"%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "FILE_DATE=$(date +"%Y.%m.%d")" >> $GITHUB_ENV
-        cat $GITHUB_WORKSPACE/target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
-        cat $GITHUB_WORKSPACE/target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
-        cat $GITHUB_WORKSPACE/target/linux/ramips/image/mt76x8.mk
 
     - name: Check Space Usage
       if: (!cancelled())
@@ -148,6 +145,10 @@ jobs:
       run: |
         cd $OPENWRT_PATH/bin/targets/*/*
         cat config.buildinfo
+        cat $OPENWRT_PATH/target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+        cat $OPENWRT_PATH/target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
+        cat $OPENWRT_PATH/target/linux/ramips/image/mt76x8.mk
+
         rm -rf packages *.buildinfo *.manifest *kernel.bin *rootfs.img.gz profiles.json sha256sums
         rename 's/^/mini-/' *
         echo "FIRMWARE_PATH=$PWD" >> $GITHUB_ENV
