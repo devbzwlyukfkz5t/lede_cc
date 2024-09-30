@@ -16,7 +16,7 @@ sed -i 's/"Phicomm K2P";/"Phicomm K2P (32M)";/g' target/linux/ramips/dts/mt7621_
 sed -i 's/15744k/32448k/g' target/linux/ramips/image/mt7621.mk
 
 # 修改默认IP
-sed -i 's/192.168.1.1/192.168.101.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.101.2/g' package/base-files/files/bin/config_generate
 
 # 科学上网
 git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
