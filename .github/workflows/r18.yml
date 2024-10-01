@@ -1,4 +1,4 @@
-name: r18 OpenWrt
+name: r18 openWrt
 
 on:
   push:

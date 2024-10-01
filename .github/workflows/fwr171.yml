@@ -1,4 +1,4 @@
-name: fwr171 OpenWrt
+name: fwr171 openWrt
 
 on:
   push:
