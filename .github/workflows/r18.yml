@@ -1,10 +1,8 @@
-name: r18 openWrt
+name: r18 openwrt
 
 on:
   push:
   workflow_dispatch:
-  schedule:
-    - cron: 45 12 * * *
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
