@@ -11,10 +11,10 @@ function git_sparse_clone() {
 }
 
 # 32M 固件, https://www.bgegao.com/2020/11/1885.html
-sed -i 's/<0x50000 0xf70000>/<0x50000 0x1fb0000>/g' target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
-sed -i 's/fc0000/2000000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
-sed -i 's/fe0000/2020000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
-sed -i 's/ff0000/2030000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+sed -i 's/<0x50000 0xf70000>/<0x50000 0xfb0000>/g' target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+sed -i 's/fc0000/1000000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+sed -i 's/fe0000/1020000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
+sed -i 's/ff0000/1030000/g'              target/linux/ramips/dts/mt7628an_hiwifi_hc5x61a.dtsi
 sed -i 's/"HC5861B";/"HC5861B (32M)";/g' target/linux/ramips/dts/mt7628an_hiwifi_hc5861b.dts
 sed -i 's/15808k/32448k/g'               target/linux/ramips/image/mt76x8.mk
 
