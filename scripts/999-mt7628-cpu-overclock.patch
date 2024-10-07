@@ -7,7 +7,7 @@ Index: linux-5.15.153/arch/mips/ralink/mt7620.c
  	if (is_mt76x8()) {
  		if (xtal_rate == MHZ(40))
 -			cpu_rate = MHZ(580);
-+			cpu_rate = MHZ(750);
++			cpu_rate = MHZ(780);
  		else
  			cpu_rate = MHZ(575);
 -		dram_rate = sys_rate = cpu_rate / 3;
