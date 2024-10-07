@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Delete Old Workflows
+    - name: delete old workflows
       uses: Mattraks/delete-workflow-runs@main
       with:
         repository: ${{ github.repository }}
@@ -18,7 +18,7 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 0
 
-    - name: Delete Old Releases
+    - name: delete old releases
       uses: dev-drprasad/delete-older-releases@v0.3.3
       with:
         keep_latest: 1
